@@ -14,12 +14,20 @@ Including another URLconf
     2. Import the include() function: from django.conf.urls import url, include
     3. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
-from django.conf.urls import url
-# from django.contrib import admin
-
+from django.conf.urls import url,include
 from Extra_Apps import xadmin
+from Apps.Address.urls import urlpatterns as AddressURLs
+
 
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     url(r'^xadmin/', xadmin.site.urls),
+    url(r'^address/',include(AddressURLs)),
 ]
+
+"""
+    from django.shortcuts import render_to_response
+    from django.http import JsonResponse
+    from LocalData.citys.citysInserts import loadCitysAndInserts
+    url(r"^insertcitys/$",lambda a:JsonResponse(loadCitysAndInserts()),name="citysinsert")
+"""
