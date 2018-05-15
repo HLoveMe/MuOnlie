@@ -6,7 +6,6 @@
 
 from enum import Enum
 
-from tools.models.ModelJSON import toJSON
 
 
 class MessageStatus(Enum):
@@ -27,9 +26,9 @@ class APIResponseMessage(object):
         """
         value = status.value
         self.status = value[0]
-        self.data = toJSON(data)
+        self.data = []
         info = kwargs.get("info",None)
         self.info = info if info is not None else (value[1] if value[0] == MessageStatus.Success.value[0] else MessageStatus.Fail.value[1])
 
     def __call__(self, *args, **kwargs):
-        return toJSON(self)
+        return []

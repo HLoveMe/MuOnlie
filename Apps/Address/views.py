@@ -1,25 +1,22 @@
-from django.shortcuts import render
 
-# Create your views here.
-from django.http import JsonResponse
+import json
+
+
 from .models import Country,Province,City,Town
 from tools.APIMessage.JSONMessage import  APIResponseMessage,MessageStatus
+from django.views.generic import View,DetailView,ListView,TemplateView
+from dss.Serializer import serializer
+from dss.Mixin import JsonResponseMixin,MultipleJsonResponseMixin
 
-class Animation(object):
-    type = "Animation"
-    pass
 
-
+class CountryView(MultipleJsonResponseMixin,ListView):
+    model = Country
+    paginate_by = 10
+    datetime_type = 'string'
 
 def getCountrys(request):
-    return JsonResponse()
+    pass
 
 def getProvinces(requests):
-    try:
-        c_id = int(requests.GET.get("country",[]).pop())
 
-    except IndexError as err:
-        return JsonResponse({})
-
-    return JsonResponse({})
     pass
