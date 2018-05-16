@@ -1,0 +1,4 @@
+#github忽略文件设置
+/.idea
+__pycache__/
+*.pyc
