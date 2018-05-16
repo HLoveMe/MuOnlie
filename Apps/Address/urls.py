@@ -5,9 +5,10 @@
 """
 
 from django.conf.urls import url
-from .views import getCountrys,getProvinces,CountryView
+from .views import CountryView,ProvincesView,CitysView
 
 urlpatterns = [
     url(r"^countrys/$",CountryView.as_view(),name="getCountrys"),
-    url(r"^provinces/$",getProvinces,name="getProvinces")
+    url(r"^provinces/$",ProvincesView.as_view(),name="getProvinces"),
+    url(r"^citys/$",CitysView.as_view(),name="getcitys"),
 ]
