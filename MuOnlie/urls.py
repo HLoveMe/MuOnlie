@@ -19,15 +19,12 @@ from Extra_Apps import xadmin
 from Apps.Address.urls import urlpatterns as AddressURLs
 
 
+from django.http import JsonResponse
+from LocalData.citys.citysInserts import loadCitysAndInserts
+
 urlpatterns = [
-    # url(r'^admin/', admin.site.urls),
     url(r'^xadmin/', xadmin.site.urls),
     url(r'^address/',include(AddressURLs)),
+    url(r"^insertcitys/$", lambda a: JsonResponse(loadCitysAndInserts()), name="citysinsert")
 ]
 
-"""
-    from django.shortcuts import render_to_response
-    from django.http import JsonResponse
-    from LocalData.citys.citysInserts import loadCitysAndInserts
-    url(r"^insertcitys/$",lambda a:JsonResponse(loadCitysAndInserts()),name="citysinsert")
-"""

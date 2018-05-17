@@ -16,7 +16,7 @@ def loadCitysAndInserts():
     # 国家
     country = Country.objects.create(name="China")
     country.save()
-    with open(path, "rb") as file:
+    with open(path, "r+") as file:
         data = json.load(file)
         provinces = data["provinces"]
         for province in provinces:
