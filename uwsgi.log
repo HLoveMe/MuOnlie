@@ -1,0 +1,106 @@
+*** Starting uWSGI 2.0.17 (64bit) on [Thu May 17 17:47:04 2018] ***
+compiled with version: 5.4.0 20160609 on 17 May 2018 08:19:14
+os: Linux-4.4.0-91-generic #114-Ubuntu SMP Tue Aug 8 11:56:56 UTC 2017
+nodename: VM-164-138-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Django/MuOnlie/conf
+detected binary path: /home/ubuntu/.virtualenvs/Py3Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/Django/MuOnlie
+your processes number limit is 7333
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17 (64bit) on [Thu May 17 18:19:24 2018] ***
+compiled with version: 5.4.0 20160609 on 17 May 2018 08:19:14
+os: Linux-4.4.0-91-generic #114-Ubuntu SMP Tue Aug 8 11:56:56 UTC 2017
+nodename: VM-164-138-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Django/MuOnlie/conf
+detected binary path: /home/ubuntu/.virtualenvs/Py3Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/Django/MuOnlie
+your processes number limit is 7333
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/ubuntu/.virtualenvs/Py3Django
+Python main interpreter initialized at 0x115d420
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 844056 bytes (824 KB) for 24 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x115d420 pid: 10602 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10602)
+spawned uWSGI worker 1 (pid: 10605, cores: 3)
+spawned uWSGI worker 2 (pid: 10606, cores: 3)
+spawned uWSGI worker 3 (pid: 10607, cores: 3)
+spawned uWSGI worker 4 (pid: 10608, cores: 3)
+spawned uWSGI worker 5 (pid: 10609, cores: 3)
+spawned uWSGI worker 6 (pid: 10610, cores: 3)
+spawned uWSGI worker 7 (pid: 10611, cores: 3)
+spawned uWSGI worker 8 (pid: 10612, cores: 3)
+Thu May 17 18:19:34 2018 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 8 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 7 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 6 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu May 17 18:19:34 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17 (64bit) on [Thu May 17 18:27:43 2018] ***
+compiled with version: 5.4.0 20160609 on 17 May 2018 08:19:14
+os: Linux-4.4.0-91-generic #114-Ubuntu SMP Tue Aug 8 11:56:56 UTC 2017
+nodename: VM-164-138-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/Django/MuOnlie/conf
+detected binary path: /home/ubuntu/.virtualenvs/Py3Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/Django/MuOnlie
+your processes number limit is 7333
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/ubuntu/.virtualenvs/Py3Django
+Python main interpreter initialized at 0x22dd420
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 844056 bytes (824 KB) for 24 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x22dd420 pid: 11363 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11363)
+spawned uWSGI worker 1 (pid: 11367, cores: 3)
+spawned uWSGI worker 2 (pid: 11368, cores: 3)
+spawned uWSGI worker 3 (pid: 11369, cores: 3)
+spawned uWSGI worker 4 (pid: 11370, cores: 3)
+spawned uWSGI worker 5 (pid: 11371, cores: 3)
+spawned uWSGI worker 6 (pid: 11372, cores: 3)
+spawned uWSGI worker 7 (pid: 11377, cores: 3)
+spawned uWSGI worker 8 (pid: 11378, cores: 3)
