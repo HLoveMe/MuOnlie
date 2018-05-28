@@ -47,7 +47,7 @@ class City(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = u"省份"
+        verbose_name = u"城市"
         verbose_name_plural = verbose_name
 
 

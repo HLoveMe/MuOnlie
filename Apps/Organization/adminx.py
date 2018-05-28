@@ -7,7 +7,7 @@
 
 from .models import Organization,Teacher
 
-from Extra_Apps import xadmin
+import xadmin
 
 
 class OrganizationAdmin(object):

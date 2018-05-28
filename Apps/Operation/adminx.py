@@ -6,7 +6,7 @@
 """
 from .models import UserMessage,UserComment,UserAsk,UserCourse
 
-from Extra_Apps import xadmin
+import xadmin
 
 
 class UserMessageAdmin(object):

@@ -4,8 +4,7 @@
     Github:HLoveMe
     time:2018/5/13 下午7:39
 """
-
-from Extra_Apps import xadmin
+import xadmin
 from .models import Course,LessonVideo,Lesson,CourseResource
 
 
