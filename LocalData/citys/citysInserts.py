@@ -5,7 +5,7 @@
 """
 import json,os
 path = os.path.join(os.path.dirname(os.path.abspath(__file__)),"citys.json")
-from Apps.Address.models import Country,Province,City,Town,Village
+from Address.models import Country,Province,City,Town,Village
 
 def loadCitysAndInserts():
     Country.objects.all().delete()

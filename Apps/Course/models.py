@@ -3,7 +3,7 @@
 from django.db import models
 from datetime import datetime
 # Create your models here.
-from Apps.Organization.models import Organization
+from Organization.models import Organization
 
 
 class Course(models.Model):

@@ -40,11 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "Apps.Users",
-    "Apps.Course",
-    "Apps.Organization",
-    "Apps.Address",
-    "Apps.Operation",
+    "Users",
+    "Course",
+    "Organization",
+    "Address",
+    "Operation",
     "Extra_Apps.xadmin",
     "crispy_forms",
 ]
@@ -136,10 +136,11 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+# STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,"Apps/Address/static")
+    # os.path.join(BASE_DIR,'static'),
+    os.path.join(BASE_DIR,'static'),
 ]
 
 MEDIA_URL = '/media/'

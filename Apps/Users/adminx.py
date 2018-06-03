@@ -25,7 +25,7 @@ class BaseSetting(object):
 
 class GlobalSettings(object):
     site_title="猪猪管理系统"
-    site_footer="七只"
+    site_footer="朱子豪的Company"
     menu_style="accordion"
 
 

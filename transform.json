@@ -1,0 +1,33 @@
+{
+    "desc": "paths 是 transform.py 目录下的 层级 ['test','app'] == './test/app'  或者是完整的路径 | extends为处理的后缀文件名",
+    "paths": [
+        ["templates"]
+    ],
+    "extends": ["html"],
+    "items": [{
+            "type": "str",
+            "key": "../css",
+            "value": "/static/css"
+        },
+        {
+            "type": "str",
+            "key": "../js",
+            "value": "/static/js"
+        },
+        {
+            "type": "str",
+            "key": "../images",
+            "value": "/static/images"
+        },
+        {
+            "type": "str",
+            "key": "../img",
+            "value": "/static/img"
+        },
+        {
+            "type": "str",
+            "key": "../media",
+            "value": "/media"
+        }
+    ]
+}

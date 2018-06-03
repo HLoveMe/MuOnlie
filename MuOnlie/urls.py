@@ -15,18 +15,24 @@ Including another URLconf
     3. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
 from django.conf.urls import url,include
+from django.views.generic import TemplateView
+
+
 import xadmin
-from Apps.Address.urls import urlpatterns as AddressURLs
-
-
-from django.http import JsonResponse
-from django.shortcuts import render
-from LocalData.citys.citysInserts import loadCitysAndInserts
+from Address.urls import urlpatterns as AddressURLs
+# from LocalData.citys.citysInserts import loadCitysAndInserts
 
 urlpatterns = [
     url(r'^xadmin/', xadmin.site.urls),
+    url(r"^$",TemplateView.as_view(template_name="index.html"),name="home"),
+    url(r"^index/$",TemplateView.as_view(template_name="index.html"),name="home"),
+    #登入注册
+    url(r"^",include("Users.urls")),
+
+
+
     url(r'^address/',include(AddressURLs)),
-    url(r"^insertcitys/$", lambda a: JsonResponse(loadCitysAndInserts()), name="citysinsert"),
-    url(r"",lambda res:render(res,"index.html"),name="index")
+    # url(r"^insertcitys/$", lambda a: JsonResponse(loadCitysAndInserts()), name="citysinsert"),
+
 ]
 

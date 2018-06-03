@@ -3,9 +3,9 @@ from datetime import datetime
 
 from django.db import models
 
-from Apps.Users.models import UserProfile
-from Apps.Course.models import Course
-from Apps.Course.models import LessonVideo
+from Users.models import UserProfile
+from Course.models import Course
+from Course.models import LessonVideo
 
 
 class UserComment(models.Model):
