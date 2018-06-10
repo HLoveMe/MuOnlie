@@ -6,9 +6,10 @@
 """
 from django.conf.urls import url
 
-from Users.views import LoginView
+from Users.views import LoginView,OutLoginView
 
 
 urlpatterns = [
-    url(r"login/$",LoginView.as_view(),name="login")
+    url(r"login/$",LoginView.as_view(),name="login"),
+    url(r"logout/$",OutLoginView.as_view(),name="logout"),
 ]

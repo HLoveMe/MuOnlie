@@ -74,12 +74,18 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media'
             ],
         },
     },
 ]
 
 AUTH_USER_MODEL = "Users.UserProfile"
+
+AUTHENTICATION_BACKENDS = (
+    "Users.MyUserBackend.HUserBackend",
+    "Users.MyUserBackend.DefaultUserBackend"
+)
 
 WSGI_APPLICATION = 'MuOnlie.wsgi.application'
 
@@ -117,6 +123,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
@@ -145,3 +152,12 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+
+"""
+    Default_Name 用户名
+    Default_Pwd  密码
+"""
+DEFAULT_USER_NAME = "admin"
+# "Default_Pwd" : "G123456789"
+DEFAULT_USER_PWD = "pbkdf2_sha256$36000$1ftfdKzztr4h$/sb9szzKKvpJyeZqAj7oVzYxvBzKsA1ITrFYnvrf7HQ="

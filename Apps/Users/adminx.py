@@ -32,5 +32,3 @@ class GlobalSettings(object):
 xadmin.site.register(EmailVerify,EmailVerifyAdmin);
 xadmin.site.register(BaseAdminView,BaseSetting);
 xadmin.site.register(CommAdminView,GlobalSettings);
-
-

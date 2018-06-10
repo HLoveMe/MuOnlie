@@ -24,15 +24,21 @@ from Address.urls import urlpatterns as AddressURLs
 
 urlpatterns = [
     url(r'^xadmin/', xadmin.site.urls),
+
+    # 首页
     url(r"^$",TemplateView.as_view(template_name="index.html"),name="home"),
     url(r"^index/$",TemplateView.as_view(template_name="index.html"),name="home"),
     #登入注册
     url(r"^",include("Users.urls")),
-
-
-
+    # Address
     url(r'^address/',include(AddressURLs)),
     # url(r"^insertcitys/$", lambda a: JsonResponse(loadCitysAndInserts()), name="citysinsert"),
 
 ]
+
+from django.conf import settings
+from django.views.static import serve
+
+if settings.DEBUG:
+    urlpatterns.append(url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}))
 
